@@ -1,27 +1,46 @@
-# AngularNetlify
+![Alt text](https://miro.medium.com/max/1024/1*-FWtm_SGM0Fx2xMHw_lGmw.jpeg?raw=true "Deploy Angular on Netlify")
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+# Deploy Angular project on Netlify.
 
-## Development server
+Netlify is a platform where you can build, deploy and host your fron-end.
+In this article you will lear how deploy your Angular project in a few steps.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 1.- Create an Angular project
 
-## Code scaffolding
+Run `ng new angular-netlify` for create angular project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 2.- In your Github account create a new repository.
 
-## Build
+![Alt text](https://miro.medium.com/max/714/1*6NL6pJh518EHuILzi6th2w.png?raw=true "Create new repository on GitHub")
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 3.- Connect and send your local project with your remote repository.
 
-## Running unit tests
+Connect
+`git remote add origin https://github.com/lemmusm/angular-deploynetlify.git`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Send
+`git push -u origin master`
 
-## Running end-to-end tests
+![Alt text](https://miro.medium.com/max/1329/1*R4_uWUTIJtenJRIR35y06g.png?raw=true "GitHub repository")
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## 4.- In Netlify login with your Github account, create new site and connect to repository created.
 
-## Further help
+![Alt text](https://miro.medium.com/max/827/1*1RSRzW0H09zejRDYajWUlQ.png?raw=true "Login with GitHub")
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![Alt text](https://miro.medium.com/max/1230/1*o34oR1tcu4hS8584dHyMcQ.png?raw=true "Create new site on Netlify")
+
+![Alt text](https://miro.medium.com/max/885/1*n6qRfsp_C-IKSEvTWxiQGA.png?raw=true "Pick a repository")
+
+## 5.- Build options and deploy.
+
+![Alt text](https://miro.medium.com/max/761/1*RdezvCj2JhlTJaGHN0sYUg.png?raw=true "Build settings")
+
+![Alt text](https://miro.medium.com/max/1220/1*Zc9bBPX86v6L7XEDufRHSQ.png?raw=true "Deploy in progress")
+
+![Alt text](https://miro.medium.com/max/1230/1*Lk_Ppb-RLsY-zrOLSk355A.png?raw=true "Site deployed")
+
+[TEST RESULT!](https://suspicious-neumann-81fba2.netlify.com/)
+
+Now, when you do push to Github repository, Netlify automatically deployment your project.
+
+That is it, easy and simple.
